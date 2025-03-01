@@ -13,7 +13,9 @@ const Navbar = () => {
     <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
     <nav className='nav-wrapper'>
         <div className='nav-content'>
-            <div className='logo cssanimation lePeek sequence'><span>&lt; Shubham :D /&gt;</span></div>
+            <div className="cssanimation typing">
+                <span style={{fontFamily :"Source Code Pro"}}>&lt; Shubham :D /&gt;</span>
+            </div>
             <ul>
                 <li>
                     <Link to="home" smooth={true} duration={500} className='menu-item'>Home</Link>

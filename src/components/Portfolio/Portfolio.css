@@ -3,10 +3,17 @@
     position: relative;
 }
 
-.portfolio-container h5 {
+.portfolio-container .page-heading {
+    display: inline-block;
     font-size: 1.5rem;
     font-weight: 600;
+    margin-bottom: 0.4rem;
+    border-bottom: 0.2rem solid #6751b9;
+}
+
+.portfolio-container .page-sub-heading {
     margin-bottom: 3rem;
+    font-size: 1rem;
 }
 
 .arrow-left,
@@ -49,8 +56,11 @@
 
 @media (max-width : 890px) {
 
-    .portfolio-container h5 {
+    .portfolio-container .page-heading {
         font-size: 1.3rem;
+    }
+    
+    .portfolio-container .page-sub-heading {
         margin-bottom: 2rem;
     }
 
@@ -60,6 +70,14 @@
 
     .arrow-right {
         right: -1rem;
+    }
+    
+}
+
+@media (max-width : 600px) { 
+
+    .portfolio-container .page-sub-heading {
+        font-size: 0.9rem;
     }
     
 }

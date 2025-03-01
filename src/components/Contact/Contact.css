@@ -2,10 +2,17 @@
     margin: 4rem 0;
 }
 
-.contact-container h5 {
+.contact-container .page-heading {
     font-size: 1.5rem;
     font-weight: 600;
+    display: inline-block;
+    border-bottom: 0.2rem solid #6751b9;
+    margin-bottom: 0.4rem;
+}
+
+.contact-container .page-sub-heading {
     margin-bottom: 3rem;
+    font-size: 1rem;
 }
 
 .contact-content {
@@ -22,6 +29,11 @@
     .contact-container {
         font-size: 1.3rem;
         margin-bottom: 2rem;
+    }
+
+    .contact-container .page-sub-heading {
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
     }
     
 }

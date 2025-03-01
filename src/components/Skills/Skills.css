@@ -26,10 +26,16 @@
     right: 0rem;
 }
 
-.skills-container h5 {
+.skills-container .page-heading {
     font-size: 1.5rem;
     font-weight: 600;
-    margin-bottom: 3.5rem;
+    display: inline-block;
+    border-bottom: 0.2rem solid #6751b9;
+    margin-bottom: 0.4em;
+}
+.skills-container .page-sub-heading {
+    margin-bottom: 3rem;
+    font-size: 1rem
 }
 
 .skills-content {
@@ -73,8 +79,11 @@
         width: 100%;
     }
 
-    .skills-container h5 {
+    .skills-container .page-heading {
         font-size: 1.3rem;
+    }
+
+    .skills-container .page-sub-heading {
         margin-bottom: 2rem;
     }
 
@@ -89,6 +98,10 @@
 
     .skills-container {
         padding: 0;
+    }
+
+    .skills-container .page-sub-heading {
+        font-size: 0.9rem;
     }
     
 }

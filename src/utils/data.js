@@ -4,7 +4,7 @@ export const SKILLS = [
         icon: "./assets/images/frontend-icon.png",
         skills: [
             { skill: "HTML5", percentage: "85%" },
-            { skill: "CSS3", percentage: "80%" },
+            { skill: "CSS3 + Tailwind", percentage: "80%" },
             { skill: "JavaScript", percentage: "75%" },
             { skill: "React.js", percentage: "70%" }
         ],
@@ -13,9 +13,10 @@ export const SKILLS = [
         title: "Backend",
         icon: "./assets/images/backend-icon.png",
         skills: [
-            { skill: "Node.js", percentage: "65%" },
-            { skill: "Express.js", percentage: "60%" },
-            { skill: "MongoDB", percentage: "55%" }
+            { skill: "Node.js", percentage: "80%" },
+            { skill: "Express.js", percentage: "85%" },
+            { skill: "MongoDB", percentage: "70%" },
+            { skill: "RESTful API", percentage: "80%" }
         ],
     },
     {
@@ -24,7 +25,8 @@ export const SKILLS = [
         skills: [
             { skill: "Git & GitHub", percentage: "70%" },
             { skill: "Visual Studio Code", percentage: "85%" },
-            { skill: "Postman", percentage: "70%" },
+            { skill: "Postman", percentage: "75%" },
+            { skill: "MongoDB Atlas", percentage: "70%" },
         ],
     },
     {
@@ -32,6 +34,7 @@ export const SKILLS = [
         icon: "./assets/images/soft-skills.png",
         skills: [
             { skill: "Critical Thinking", percentage: "70%" },
+            { skill: "Creativity", percentage: "80%" },
             { skill: "Time Management", percentage: "85%" },
             { skill: "Adaptability", percentage: "70%" },
         ],
@@ -48,6 +51,7 @@ export const PORTFOLIO = [
             "Utilized MongoDB for efficient storage and retrieval of chat messages.",
             "Demonstrated proficiency in full-stack development, web sockets, and handling real-time data flow.",
         ],
+        imageUrl : './assets/images/heroImage.jpg',
         gitHubUrl : 'https://github.com/shubhamxdhapola/QuickChat',
         liveUrl : 'https://quickchat-07q9.onrender.com/login',
     },
@@ -60,6 +64,7 @@ export const PORTFOLIO = [
             "Showcases the current time, date, month, and year for added convenience. ",
             "Integrated with the OpenWeather API to fetch accurate weather information based on the user's location. ",
         ],
+        imageUrl : './assets/images/heroImage.jpg',
         gitHubUrl : 'https://github.com/shubhamxdhapola/Weather-App',
         liveUrl : 'https://weatherapp-delta-mocha.vercel.app/',
     },
@@ -73,6 +78,7 @@ export const PORTFOLIO = [
             "Fetched questions from the Open Trivia Database API, covering a wide range of topics.",
             "Showcased skills in interactive UI design, API integration, and creating an engaging user experience.",
         ],
+        imageUrl : './assets/images/heroImage.jpg',
         gitHubUrl : 'https://github.com/shubhamxdhapola/Quizzy',
         liveUrl : 'https://shubhamxdhapola.github.io/Quizzy/',
     },
@@ -85,8 +91,28 @@ export const PORTFOLIO = [
             "Implemented features like copy to clipboard for easy retrieval of saved passwords.",
             "Demonstrated expertise in React state management, Tailwind styling, and working with browser storage APIs.",        
         ],
+        imageUrl : './assets/images/heroImage.jpg',
         gitHubUrl : 'https://github.com/shubhamxdhapola/Password-Manager',
         liveUrl : 'https://password-manager-kohl-alpha.vercel.app/',
     },
 ];
+
+export const SOCIAL_HANDLES = [
+    {
+        socialHandleUrl : 'https://www.linkedin.com/in/shubhamdhapola/',
+        iconUrl : 'fa-brands fa-linkedin-in',
+    },
+    {
+        socialHandleUrl : 'https://github.com/shubhamxdhapola',
+        iconUrl : 'fa-brands fa-github',
+    },
+    {
+        socialHandleUrl : 'https://www.instagram.com/orewashubham/',
+        iconUrl : 'fa-brands fa-instagram',
+    },
+    {
+        socialHandleUrl : 'mailto:shubhamdhapola143@gmail.com',
+        iconUrl : 'fa-solid fa-envelope',
+    }
+]
 

@@ -31,9 +31,9 @@
 }
 
 .hero-content h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 600;
-    line-height: 4rem;
+    line-height: 3.8rem;
     margin-bottom: 1rem;
 }
 
@@ -93,6 +93,37 @@
     animation: _icons-anim infinite 2s ease-in-out 
 }
 
+.social-media-handles{
+    margin-top: 40px;
+}
+
+.social-media-handles a{
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border-radius: 0.65rem;
+    border-radius: 100%;
+    margin-right: 15px;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border-radius: 0.65rem;
+    border: 1.5px solid #8064e8;
+}
+
+.social-media-handles a i{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.social-media-handles a:hover{
+    background-color: #8064e8;
+    transform: translateY(-5px);
+    i{  color : white; }
+}
+
 @keyframes _main-img-anim {
     50% { 
         transform: translateY(5px) 
@@ -107,8 +138,8 @@
 @media (max-width : 1025px) {
 
     .hero-content h2 {
-        font-size: 3rem;
-        line-height: 4rem;
+        font-size: .2.4rem;
+        line-height: 3.5rem;
     }
 
     .hero-content p {
@@ -145,7 +176,9 @@
     }
 
     .hero-content h2,
-    .hero-content p {
+    .hero-content p,
+    .social-media-handles
+     {
         width: auto;
         text-align: center;
     }
@@ -171,12 +204,12 @@
 @media (max-width : 600px) {
 
     .hero-content h2 {
-        font-size: 2.2rem;
-        line-height: 3rem;
+        font-size: 1.9rem;
+        line-height: 2.4rem;
     }
 
     .hero-content p {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         line-height: 1.3rem;
     }
 

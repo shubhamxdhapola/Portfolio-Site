@@ -10,13 +10,14 @@ const PortfolioCard = ({details}) => {
         
         {details.techStacks.map((techStack, index) => (
             <div key={index} className='tech-stack'>{techStack}</div>
-          ))}
+        ))}
 
         <ul>
             {details.description.map((item, index) => (
                 <li key={index}>{item}</li>
             ))}
         </ul>
+
 
         <div className='portfolio-card-btns-container'>        
             <a 
