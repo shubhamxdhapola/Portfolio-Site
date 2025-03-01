@@ -40,44 +40,53 @@ export const SKILLS = [
 
 export const PORTFOLIO = [
     {
-        title: "Senior Frontend Developer at Tech Innovators",
-        date: "January 2022 – Present",
+        title: "QuickChat",
+        techStacks: ['Node.js', "React.js", "Socket.io", "Zustand", "MongoDB", "Tailwind"],
         description: [
-            "Led a team of frontend developers in the redesign of the company's flagship product, resulting in a 30% increase in user engagement.",
-            "Implemented advanced CSS animations and transitions to enhance the overall user experience.",
-            "Collaborated with UX/UI designers to translate wireframes and mockups into responsive and interactive web applications.",
-            "Introduced and integrated Vue.js into the tech stack, improving code maintainability and development efficiency.",
+            "Built a real-time chat application using React for the frontend and Node.js with Express for the backend.",
+            "Integrated Socket.io to enable instant messaging and real-time updates between users.",
+            "Utilized MongoDB for efficient storage and retrieval of chat messages.",
+            "Demonstrated proficiency in full-stack development, web sockets, and handling real-time data flow.",
         ],
+        gitHubUrl : 'https://github.com/shubhamxdhapola/QuickChat',
+        liveUrl : 'https://quickchat-07q9.onrender.com/login',
     },
     {
-        title: "Junior Web Developer at Digital Solution",
-        date: "June 2020 – December 2021",
+        title: "Weather Application",
+        techStacks: ['React', 'CSS3', "JavaScript", "Openweather API"],
         description: [
-            "Developed and maintained client websites, ensuring high-quality standards and timely project delivery.",
-            "Implemented SEO best practices, leading to a 25% increase in organic search traffic for key clients.",
-            "Worked closely with the design team to create pixel-perfect, cross-browser-compatible web pages.",
-            "Conducted code reviews and mentored junior developers in adopting best coding practices.",
+            "Built using React, with a responsive and interactive user interface. ",
+            "Displays real-time weather data including temperature, humidity, wind speed, and more. ",
+            "Showcases the current time, date, month, and year for added convenience. ",
+            "Integrated with the OpenWeather API to fetch accurate weather information based on the user's location. ",
         ],
+        gitHubUrl : 'https://github.com/shubhamxdhapola/Weather-App',
+        liveUrl : 'https://weatherapp-delta-mocha.vercel.app/',
+    },
+    
+    {
+        title: "Quizzy",
+        techStacks: ['HTML5', 'CSS3', "JavaScript", "Trivia API"],
+        description: [
+            "Built using HTML, CSS, and JavaScript with smooth animations for a seamless experience.",
+            "Implemented a custom timer for each question to enhance user engagement.",
+            "Fetched questions from the Open Trivia Database API, covering a wide range of topics.",
+            "Showcased skills in interactive UI design, API integration, and creating an engaging user experience.",
+        ],
+        gitHubUrl : 'https://github.com/shubhamxdhapola/Quizzy',
+        liveUrl : 'https://shubhamxdhapola.github.io/Quizzy/',
     },
     {
-        title: "Web Development Intern at Creative Agency",
-        date: "January 2020 – May 2020",
+        title: "Password Manager",
+        techStacks: ['React.js', 'Tailwind', "LocalStorage", "JavaScript"],
         description: [
-            "Assisted in building responsive landing pages and e-commerce sites using HTML, CSS, and JavaScript.",
-            "Optimized website performance and improved page load speed through efficient asset management.",
-            "Participated in client meetings to gather requirements and provide technical suggestions.",
-            "Gained hands-on experience with Git for version control in a team environment.",
+            "Developed a Password Manager application using React and Tailwind CSS for a modern and responsive user interface.",
+            "Enables users to securely store, view, and manage passwords, all saved locally in the browser's localStorage.",
+            "Implemented features like copy to clipboard for easy retrieval of saved passwords.",
+            "Demonstrated expertise in React state management, Tailwind styling, and working with browser storage APIs.",        
         ],
-    },
-    {
-        title: "Freelance Web Developer",
-        date: "June 2019 – December 2019",
-        description: [
-            "Designed and developed custom websites for small businesses and personal portfolios.",
-            "Created reusable code components to speed up development for future projects.",
-            "Worked directly with clients to understand project scope and deliver tailored solutions.",
-            "Provided website maintenance and support, including content updates and bug fixes.",
-        ],
+        gitHubUrl : 'https://github.com/shubhamxdhapola/Password-Manager',
+        liveUrl : 'https://password-manager-kohl-alpha.vercel.app/',
     },
 ];
 

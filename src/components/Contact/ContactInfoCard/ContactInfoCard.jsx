@@ -5,7 +5,7 @@ const ContactInfoCard = ({iconUrl, text}) => {
   return (
     <div className='contact-details-card'>
         <div className="icon">
-            <img src={iconUrl} alt={text} />
+          <i className={iconUrl}></i>
         </div>
         <p>{text}</p>
     </div>

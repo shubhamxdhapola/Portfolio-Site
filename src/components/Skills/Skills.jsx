@@ -10,7 +10,7 @@ const Skills = () => {
   const handleSelectSkill = (data) => setSelectedSkill(data)
 
   return (
-    <section className='skills-container'>
+    <section className='skills-container' name="skills">
       <h5>Technical Proficiency</h5>
 
       <div className='skills-content'>

@@ -9,11 +9,11 @@ const Portfolio = () => {
   let sliderRef = useRef()
 
   const settings = {
-    dots : true,
+    dots : false,
     infinite : true,
     speed : 500,
     slidesToShow : 2,
-    slidesToScroll : 1,
+    slidesToScroll : 2,
     arrows : false,
     responsive : [
       {
@@ -30,7 +30,7 @@ const Portfolio = () => {
   const slideLeft = () => sliderRef.current.slickPrev()
 
   return (
-    <section className='portfolio-container'>
+    <section className='portfolio-container' name="portfolio">
         <h5>Portfolio</h5>
         <div className="portfolio-content">
           <div className="arrow-right" onClick={slideRight}>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './Navbar.css'
 import MobileNav from './MobileNav/MobileNav'
+import { Link } from 'react-scroll'
 
 const Navbar = () => {
 
@@ -15,16 +16,16 @@ const Navbar = () => {
             <div className='logo cssanimation lePeek sequence'><span>&lt; Shubham :D /&gt;</span></div>
             <ul>
                 <li>
-                    <a className='menu-item'>Home</a>
+                    <Link to="home" smooth={true} duration={500} className='menu-item'>Home</Link>
                 </li>
                 <li>
-                    <a className='menu-item'>Skills</a>
+                    <Link to="skills" smooth={true} duration={500} className='menu-item'>Skills</Link>
                 </li>
                 <li>
-                    <a className='menu-item'>Portfolio</a>
+                    <Link to="portfolio" smooth={true} duration={500} className='menu-item'>Portfolio</Link>
                 </li>
                 <li>
-                    <a className='menu-item'>Contact</a>
+                    <Link to="contact" smooth={true} duration={500} className='menu-item'>Contact</Link>
                 </li>
 
                 <a 

@@ -21,10 +21,8 @@
     margin-bottom: 0.8rem;
 }
 
-.icon img {
-    width: 1.8rem;
-    height: auto;
-    object-fit: contain;
+.contact-details-card .icon i {
+    font-size: 1.3rem;
 }
 
 .contact-details-card p {
