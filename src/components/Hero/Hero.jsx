@@ -26,7 +26,7 @@ const Hero = () => {
                 </div>
                 <img 
                     className="cssanimation main-img-anim"
-                    src="./assets/images/IMG-20241024-WA0091.jpg" 
+                    src="./assets/images/IMG-20241024-WA0043.jpg" 
                     alt="" 
                 />
             </div>
