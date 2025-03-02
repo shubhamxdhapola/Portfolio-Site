@@ -49,7 +49,7 @@
 }
 
 .portfolio-card-btns-container {
-    margin-top: 3rem;
+    margin-top: 2.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +91,6 @@
 .portfolio-btn:hover::before {
     transform: translateX(0);
 }
-
 
 @media (max-width : 890px) {
 

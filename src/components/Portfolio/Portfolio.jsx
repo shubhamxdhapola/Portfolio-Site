@@ -1,5 +1,5 @@
-import React, { useRef } from 'react'
 import './Portfolio.css'
+import React, { useRef } from 'react'
 import { PORTFOLIO } from '../../utils/data.js'
 import PortfolioCard from './PortfolioCard/PortfolioCard'
 import Slider from 'react-slick'
@@ -15,19 +15,19 @@ const Portfolio = () => {
     slidesToShow : 2,
     slidesToScroll : 2,
     arrows : false,
-    responsive : [
-      {
+    responsive : [{
         breakpoint : 890,
         settings : {
           slidesToScroll : 1,
           slidesToShow : 1,
         }
-      }
-    ]
+    }]
   }
 
   const slideRight = () => sliderRef.current.slickNext()
   const slideLeft = () => sliderRef.current.slickPrev()
+
+  setInterval(() => slideRight(), 5000);
 
   return (
     <section className='portfolio-container' name="portfolio">
@@ -48,8 +48,8 @@ const Portfolio = () => {
               />
             ))}
           </Slider>
+          
         </div>
-
     </section>
   )
 }

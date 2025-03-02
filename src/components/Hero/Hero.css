@@ -75,7 +75,7 @@
     justify-content: center;
     text-align: center;
     border-radius: 0.65rem;
-    border: 1.5px solid #6852ba;
+    border: 1.5px solid #6852ba; 
 }
 
 .tech-icon img {
@@ -121,7 +121,6 @@
 .social-media-handles a:hover{
     background-color: #8064e8;
     transform: translateY(-5px);
-    i{  color : white; }
 }
 
 @keyframes _main-img-anim {
@@ -177,8 +176,7 @@
 
     .hero-content h2,
     .hero-content p,
-    .social-media-handles
-     {
+    .social-media-handles {
         width: auto;
         text-align: center;
     }
@@ -204,8 +202,8 @@
 @media (max-width : 600px) {
 
     .hero-content h2 {
-        font-size: 1.9rem;
-        line-height: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 2.3rem;
     }
 
     .hero-content p {

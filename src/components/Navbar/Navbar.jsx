@@ -1,53 +1,54 @@
-import { useState } from 'react'
 import './Navbar.css'
+import { useState } from 'react'
 import MobileNav from './MobileNav/MobileNav'
 import { Link } from 'react-scroll'
 import { X, AlignRight } from 'lucide-react'
+import { navPages } from '../../utils/data.js'
 
 const Navbar = () => {
 
     const [ openMenu, setOpenMenu ] = useState(false)
     const toggleMenu = () => setOpenMenu(!openMenu)
 
-  return (
+    return (
     <>
-    <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
-    <nav className='nav-wrapper'>
-        <div className='nav-content'>
-            <div className="cssanimation typing">
-                <span style={{fontFamily :"Source Code Pro"}}>&lt; Shubham :D /&gt;</span>
-            </div>
-            <ul>
-                <li>
-                    <Link to="home" smooth={true} duration={500} className='menu-item'>Home</Link>
-                </li>
-                <li>
-                    <Link to="skills" smooth={true} duration={500} className='menu-item'>Skills</Link>
-                </li>
-                <li>
-                    <Link to="portfolio" smooth={true} duration={500} className='menu-item'>Portfolio</Link>
-                </li>
-                <li>
-                    <Link to="contact" smooth={true} duration={500} className='menu-item'>Contact</Link>
-                </li>
-
-                <a 
-                    href='./resume.pdf'
-                    className='resume-btn' onClick={() => {}}
-                    download={true}
+        <MobileNav isOpen={openMenu} toggleMenu={toggleMenu} />
+        <nav className='nav-wrapper'>
+            <div className='nav-content'>
+                <Link  
+                    to='home' smooth={true} duration={500} 
+                    className='logo'
                 >
-                 <span>Download CV</span>
-                </a>
-
-            </ul>
-
-            <button className='menu-btn' onClick={toggleMenu}>
-                {openMenu ? <X /> : <AlignRight />}
-            </button>
-        </div>
-    </nav>
+                    <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
+                </Link>
+            
+                <ul>
+                    {navPages.map((navPage, index) => (
+                        <li key={index}>
+                            <Link 
+                                to={navPage} smooth={true} duration={500} 
+                                className='menu-item'
+                                onClick={toggleMenu}
+                            >
+                                <span>{navPage.charAt(0).toUpperCase() + navPage.slice(1)}</span>
+                            </Link>
+                        </li>
+                    ))}
+                    <a 
+                        href='./resume.pdf'
+                        className='resume-btn'
+                        download={true}
+                    >
+                    <span>Download CV</span>
+                    </a>
+                </ul>
+                <button className='menu-btn' onClick={toggleMenu}>
+                    <span>{openMenu ? <X /> : <AlignRight />}</span>
+                </button>
+            </div>
+        </nav>
     </>
-  )
+    )
 }
 
 export default Navbar

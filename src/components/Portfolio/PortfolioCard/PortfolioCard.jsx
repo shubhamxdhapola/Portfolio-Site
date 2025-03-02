@@ -2,12 +2,12 @@ import React from 'react'
 import './PortfolioCard.css'
 import { Radio, CodeXml } from 'lucide-react'
 
-
 const PortfolioCard = ({details}) => {
   return (
     <div className='portfolio-card'>
+
         <h6>{details.title}</h6>
-        
+
         {details.techStacks.map((techStack, index) => (
             <div key={index} className='tech-stack'>{techStack}</div>
         ))}
@@ -17,7 +17,6 @@ const PortfolioCard = ({details}) => {
                 <li key={index}>{item}</li>
             ))}
         </ul>
-
 
         <div className='portfolio-card-btns-container'>        
             <a 
@@ -36,6 +35,7 @@ const PortfolioCard = ({details}) => {
               Live <Radio size={23} className='url-icons'/> 
             </a>
         </div>
+
     </div>
   )
 }

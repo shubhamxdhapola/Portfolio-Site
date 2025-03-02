@@ -63,6 +63,18 @@ form textarea:focus {
     outline: none;
 }
 
+@media (max-width : 860px) {
+
+    form input,
+    form textarea {
+        font-size: 0.8rem;
+    }
+
+    form button {
+        font-size: 0.9rem;
+    }
+}
+
 @media (max-width : 450px) {
 
     .name-container {
@@ -74,6 +86,7 @@ form textarea:focus {
     form textarea {
         padding: 0.7rem;
         border-radius: 0.3rem;
+        font-size: 0.9rem;
     }
 
     form button {
@@ -82,16 +95,4 @@ form textarea:focus {
         border-radius: 0.3rem;
     }
     
-}
-
-@media (max-width : 860px) {
-
-    form input,
-    form textarea {
-        font-size: 0.8rem;
-    }
-
-    form button {
-        font-size: 0.9rem;
-    }
 }

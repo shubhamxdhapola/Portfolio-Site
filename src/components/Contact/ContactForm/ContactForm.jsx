@@ -1,19 +1,61 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ContactForm.css'
+import {toast} from 'react-hot-toast'
+import axios from 'axios'
 
 const ContactForm = () => {
 
+  const initFormData = {
+    firstName : '',
+    lastName : '',
+    email : '',
+    message : '',
+  }
+
+  let [ formData, setFormData ] = useState(initFormData)
+  
+  const handleOnChange = (e) => {
+    setFormData(prevData => (
+    {...prevData, [e.target.name] : e.target.value}
+  ))}
+
+  const validateForm = () => {
+    if(!formData.firstName.trim() ||
+      !formData.lastName.trim() || 
+      !formData.email.trim() || 
+      !formData.message.trim()) { 
+        return toast.error('All fields are required!') 
+      }
+    if(!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)){
+      return toast.error('Invalid email format!')
+    } 
+    return true    
+  }
+
+  const handleOnSubmit = (e) => {
+    e.preventDefault()
+    const success = validateForm()
+    if(success === true){
+      axios.post(import.meta.env.VITE_FORM_API, formData)
+      toast.success("Form submitted successfully!")
+      setFormData(initFormData)
+    } 
+  }
 
   return (
     <div className='contact-form-content'>
-        <form action={import.meta.env.VITE_FORM_API} method='POST'>
+        <form onSubmit={handleOnSubmit}>
             <div className="name-container">
-                <input type="text" name='firstName' placeholder="Sender's First Name" />
-                <input type="text" name='lastName' placeholder="Sender's Last Name" />
+                <input type="text" name='firstName' placeholder="Sender's First Name" 
+                value={formData.firstName} onChange={handleOnChange}/>
+                <input type="text" name='lastName' placeholder="Sender's Last Name" 
+                value={formData.lastName} onChange={handleOnChange} />
             </div>
-            <input type="email" name='email' placeholder="Sender's Email"  />
-            <textarea type="text" name="message" placeholder="Leave your message" rows={3}></textarea>
-            <button type='submit'>SEND</button>
+            <input type="text" name='email' placeholder="Sender's Email" 
+            value={formData.email} onChange={handleOnChange} />
+            <textarea type="text" name="message" placeholder="Leave your message" rows={3} 
+            value={formData.message} onChange={handleOnChange}></textarea>
+            <button type='submit'>SUBMIT</button>
         </form>
     </div>
   )

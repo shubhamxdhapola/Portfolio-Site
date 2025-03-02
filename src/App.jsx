@@ -5,10 +5,12 @@ import Portfolio from './components/Portfolio/Portfolio'
 import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import { Toaster } from 'react-hot-toast'
 
 function App() {
   return (
     <>
+      <Toaster />
       <Navbar />
       <div className="container">
           <Hero />

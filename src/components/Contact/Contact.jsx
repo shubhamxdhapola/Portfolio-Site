@@ -7,7 +7,9 @@ const Contact = () => {
   return (
     <section className='contact-container' name="contact">
         <h5 className='page-heading'>Contact Me</h5>
-        <p className='page-sub-heading'>Submit the form below to get in touch with me</p>
+        <p className='page-sub-heading'>
+            Submit the form below to get in touch with me
+        </p>
         <div className='contact-content'>
             <div style={{flex : 1}}>
                 <ContactInfoCard 

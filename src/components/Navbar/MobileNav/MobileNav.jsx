@@ -1,31 +1,34 @@
 import React from 'react'
 import './MobileNav.css'
 import { Link } from 'react-scroll'
-
+import { navPages } from '../../../utils/data'
 
 const MobileNav = ({isOpen, toggleMenu}) => {
-  return (
+    return (
     <>
         <div
             className={`mobile-menu ${isOpen ? 'active' : ""}`}
             onClick={toggleMenu}
         >
             <div className='mobile-menu-container'>
-                <span className='logo'>&lt; Shubham :D /&gt;</span>
+                <Link 
+                    to='home' smooth={true} duration={500} 
+                    className='logo' onClick={toggleMenu}
+                >
+                    <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
+                </Link>
                 <ul>
-                    <li>
-                        <Link to="home" smooth={true} duration={500} onClick={toggleMenu} className='menu-item'>Home</Link>
-                    </li>
-                    <li>
-                        <Link to="skills" smooth={true} duration={500} onClick={toggleMenu} className='menu-item'>Skills</Link>
-                    </li>
-                    <li >
-                        <Link to="portfolio" smooth={true} duration={500} onClick={toggleMenu} className='menu-item'>Portfolio</Link>
-                    </li>
-                    <li >
-                        <Link to="contact" smooth={true} duration={500} onClick={toggleMenu} className='menu-item'>Contact</Link>
-                    </li>
-
+                    {navPages.map((navPage, index) => (
+                        <li key={index}>
+                            <Link 
+                                to={navPage} smooth={true} duration={500} 
+                                className='menu-item'
+                                onClick={toggleMenu}
+                            >
+                                <span>{navPage.charAt(0).toUpperCase() + navPage.slice(1)}</span>
+                            </Link>
+                        </li>
+                    ))}
                     <a 
                         href='./resume.pdf'
                         className='resume-btn'
@@ -34,12 +37,10 @@ const MobileNav = ({isOpen, toggleMenu}) => {
                         Download CV
                     </a>
                 </ul>
-
             </div>
-        
         </div>
     </>
-  )
+    )
 }
 
 export default MobileNav

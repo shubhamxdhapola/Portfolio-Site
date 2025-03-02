@@ -19,10 +19,12 @@
     background-color: #342864;
     padding: 2rem;
 }
+
 .mobile-menu-container .logo {
     display: inline-block;
     margin-bottom: 3rem;
 }
+
 .mobile-menu.active {
     opacity: 1;
     transform: translateX(0);
@@ -36,7 +38,7 @@
     margin-left: -2rem;
 }
 
-@media (max-width : 820px) {
+@media (max-width : 890px) {
     .mobile-menu {
         display: block;
     }
