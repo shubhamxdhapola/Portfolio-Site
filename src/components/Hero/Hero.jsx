@@ -9,8 +9,8 @@ const Hero = () => {
             <p>I’m a full-stack developer skilled in the MERN stack, passionate about building clean, efficient, and user-centric web applications.</p>
 
             <div className="social-media-handles">
-                {SOCIAL_HANDLES.map(({socialHandleUrl, iconUrl}) => (
-                    <a href={socialHandleUrl} target="_blank">
+                {SOCIAL_HANDLES.map(({socialHandleUrl, iconUrl}, index) => (
+                    <a key={index} href={socialHandleUrl} target="_blank">
                         <i className={iconUrl}i></i>
                     </a>
                 ))}

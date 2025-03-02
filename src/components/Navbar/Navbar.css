@@ -107,10 +107,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: none;
+    border: 1px solid #8064e8;
     border-radius: 0.4rem;
     color: #fff;
-    background: linear-gradient(90deg, #a993fe -0.13%, #7e61e7 99.87%);
+    background: #8064e8;
     line-height: 0;
     cursor: pointer;
     transition: all 0.4s ease;
@@ -120,7 +120,6 @@
 .menu-btn:hover {
     color: #a993fe;
     background: #000;
-    border: 1px solid #a993fe;
 }
 
 .typing {

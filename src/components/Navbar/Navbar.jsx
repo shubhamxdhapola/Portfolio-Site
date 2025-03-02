@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './Navbar.css'
 import MobileNav from './MobileNav/MobileNav'
 import { Link } from 'react-scroll'
+import { X, AlignRight } from 'lucide-react'
 
 const Navbar = () => {
 
@@ -35,19 +36,13 @@ const Navbar = () => {
                     className='resume-btn' onClick={() => {}}
                     download={true}
                 >
-                    Download CV
+                 <span>Download CV</span>
                 </a>
 
             </ul>
 
             <button className='menu-btn' onClick={toggleMenu}>
-                <span
-                    className={'material-symbols-outlined'}
-                    style={{fontSize : '1.8rem'}}
-                >
-                    {openMenu ? 'close' : 'menu'}
-                </span>
-
+                {openMenu ? <X /> : <AlignRight />}
             </button>
         </div>
     </nav>

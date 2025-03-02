@@ -67,6 +67,10 @@ Todo : Add this hover effect later.
         padding: 2rem;
     }
 
+    .skills-card span {
+        font-size: 1rem;
+    }
+
     .skill-icon span {
         font-size: 1rem;
     }
