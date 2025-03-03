@@ -18,12 +18,12 @@ const Navbar = () => {
                 <Link  
                     to='home' smooth={true} duration={500} 
                     className='logo'
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                 >
                     <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
                 </Link>
             
-                <ul data-aos="fade-down">
+                <ul data-aos="fade-left">
                     {navPages.map((navPage, index) => (
                         <li key={index}>
                             <Link 
