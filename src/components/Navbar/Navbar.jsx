@@ -18,7 +18,6 @@ const Navbar = () => {
                 <Link  
                     to='home' smooth={true} duration={500} 
                     className='logo'
-                    data-aos="fade-right"
                 >
                     <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
                 </Link>
@@ -43,7 +42,7 @@ const Navbar = () => {
                     <span>Download CV</span>
                     </a>
                 </ul>
-                <button className='menu-btn' onClick={toggleMenu} data-aos="fade-down">
+                <button className='menu-btn' onClick={toggleMenu}>
                     <span>{openMenu ? <X /> : <AlignRight />}</span>
                 </button>
             </div>
