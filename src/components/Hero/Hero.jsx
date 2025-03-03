@@ -4,7 +4,7 @@ import { SOCIAL_HANDLES } from '../../utils/data.js'
 const Hero = () => {
   return (
     <section className='hero-container' name="home">
-        <div className='hero-content' data-aos="fade-right">
+        <div className='hero-content'>
             <h2>
                 My <span style={{color : '#8064e8'}}>Code</span> Never Bugs, It Just Develops Unexpected Features
             </h2>
@@ -20,7 +20,7 @@ const Hero = () => {
             </div>
         </div>
 
-        <div className='hero-img' data-aos="fade-left">
+        <div className='hero-img'>
             <div>
                 <div className="tech-icon" href='mailto:shubhamdhapola143@gmail.com'>
                     <img 

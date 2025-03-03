@@ -31,8 +31,8 @@ const Portfolio = () => {
 
   return (
     <section className='portfolio-container' name="portfolio">
-        <h5 className='page-heading' data-aos="fade-down">Portfolio</h5>
-        <p className='page-sub-heading' data-aos="fade-up">Check out some of my work right here</p>
+        <h5 className='page-heading'>Portfolio</h5>
+        <p className='page-sub-heading'>Check out some of my work right here</p>
         <div className="portfolio-content">
           <div className="arrow-right" onClick={slideRight}>
             <span className='material-symbols-outlined'>chevron_right</span>

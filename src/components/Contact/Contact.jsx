@@ -11,7 +11,7 @@ const Contact = () => {
             Submit the form below to get in touch with me
         </p>
         <div className='contact-content'>
-            <div style={{flex : 1}} data-aos="fade-right">
+            <div style={{flex : 1}}>
                 <ContactInfoCard 
                     iconUrl='fa-solid fa-envelope'
                     text='shubhamdhapola143@gmail.com'

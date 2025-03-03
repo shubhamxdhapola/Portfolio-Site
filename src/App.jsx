@@ -6,21 +6,8 @@ import Skills from './components/Skills/Skills'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 import { Toaster } from 'react-hot-toast'
-import { useEffect } from 'react'
-
-import AOS from 'aos'
-import 'aos/dist/aos.css'
 
 function App() {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-      once: false,    
-      offset :100,
-    })
-  }, [])
-
   return (
     <>
       <Toaster />

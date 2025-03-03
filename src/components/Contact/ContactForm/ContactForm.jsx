@@ -47,15 +47,15 @@ const ContactForm = () => {
         <form onSubmit={handleOnSubmit}>
             <div className="name-container">
                 <input type="text" name='firstName' placeholder="Sender's First Name" 
-                value={formData.firstName} onChange={handleOnChange} data-aos="fade-right"/>
+                value={formData.firstName} onChange={handleOnChange}/>
                 <input type="text" name='lastName' placeholder="Sender's Last Name" 
-                value={formData.lastName} onChange={handleOnChange} data-aos="fade-left"/>
+                value={formData.lastName} onChange={handleOnChange} />
             </div>
             <input type="text" name='email' placeholder="Sender's Email " 
-            value={formData.email} onChange={handleOnChange} data-aos="fade-left"/>
+            value={formData.email} onChange={handleOnChange} />
             <textarea type="text" name="message" placeholder="Leave your message" rows={3} 
-            value={formData.message} onChange={handleOnChange} data-aos="fade-right"></textarea>
-            <button type='submit' data-aos="fade-up">SUBMIT</button>
+            value={formData.message} onChange={handleOnChange} ></textarea>
+            <button type='submit'>SUBMIT</button>
         </form>
     </div>
   )

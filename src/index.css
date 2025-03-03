@@ -12,5 +12,7 @@ body {
   color :#fff;
   background-color: #060417;
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
+
+

@@ -19,10 +19,10 @@ const Navbar = () => {
                     to='home' smooth={true} duration={500} 
                     className='logo'
                 >
-                    <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
+                    <span  style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
                 </Link>
             
-                <ul data-aos="fade-left">
+                <ul>
                     {navPages.map((navPage, index) => (
                         <li key={index}>
                             <Link 
