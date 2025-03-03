@@ -122,6 +122,10 @@
     display: none;
 }
 
+.menu-btn span {
+    text-align: center;
+}
+
 .menu-btn:hover {
     color: #a993fe;
     background: #000;
