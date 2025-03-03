@@ -4,7 +4,7 @@ import { Radio, CodeXml } from 'lucide-react'
 
 const PortfolioCard = ({details}) => {
   return (
-    <div className='portfolio-card'>
+    <div className='portfolio-card' data-aos="fade-up">
 
         <h6>{details.title}</h6>
 

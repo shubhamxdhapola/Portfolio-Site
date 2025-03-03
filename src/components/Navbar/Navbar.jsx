@@ -18,11 +18,12 @@ const Navbar = () => {
                 <Link  
                     to='home' smooth={true} duration={500} 
                     className='logo'
+                    data-aos="fade-down"
                 >
                     <span style={{fontFamily :"Source Code Pro"}} >&lt; Shubham :D /&gt;</span>
                 </Link>
             
-                <ul>
+                <ul data-aos="fade-down">
                     {navPages.map((navPage, index) => (
                         <li key={index}>
                             <Link 
@@ -42,7 +43,7 @@ const Navbar = () => {
                     <span>Download CV</span>
                     </a>
                 </ul>
-                <button className='menu-btn' onClick={toggleMenu}>
+                <button className='menu-btn' onClick={toggleMenu} data-aos="fade-down">
                     <span>{openMenu ? <X /> : <AlignRight />}</span>
                 </button>
             </div>
