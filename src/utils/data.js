@@ -52,7 +52,7 @@ export const PORTFOLIO = [
             "Demonstrated proficiency in full-stack development, web sockets, and handling real-time data flow.",
         ],
         gitHubUrl : 'https://github.com/shubhamxdhapola/QuickChat',
-        liveUrl : 'https://quickchat-07q9.onrender.com/login',
+        liveUrl : 'https://quickchatapp-3zbz.onrender.com/',
     },
     {
         title: "Weather Application",
