@@ -51,8 +51,22 @@ export const PORTFOLIO = [
             "Utilized MongoDB for efficient storage and retrieval of chat messages.",
             "Demonstrated proficiency in full-stack development, web sockets, and handling real-time data flow.",
         ],
-        gitHubUrl : 'https://github.com/shubhamxdhapola/QuickChat',
-        liveUrl : 'https://quickchatapp-3zbz.onrender.com/',
+        gitHubUrl: 'https://github.com/shubhamxdhapola/QuickChat',
+        liveUrl: 'https://quickchatapp-3zbz.onrender.com/',
+    },
+    {
+        title: "Drippy",
+        techStacks: ['Node.js', "React.js", "Redux", "MongoDB", "Tailwind", "Express.js"],
+        description: [
+
+            "Built a responsive eCommerce interface using React, Redux, Tailwind CSS, and DaisyUI.",
+            "Developed a robust backend with Node.js, Express, and MongoDB, implementing JWT-based authentication.",
+            "Integrated PayPal for online payment processing.",
+            "Enabled features like product search, filters, cart, order history, and secure checkout.",
+            "Created an admin panel to manage users (including role updates), products, orders, and view revenue analytics."
+        ],
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Drippy',
+        liveUrl: 'https://drippy-kkzk.onrender.com/',
     },
     {
         title: "Weather Application",
@@ -63,10 +77,10 @@ export const PORTFOLIO = [
             "Showcases the current time, date, month, and year for added convenience. ",
             "Integrated with the OpenWeather API to fetch accurate weather information based on the user's location. ",
         ],
-        gitHubUrl : 'https://github.com/shubhamxdhapola/Weather-App',
-        liveUrl : 'https://weatherapp-delta-mocha.vercel.app/',
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Weather-App',
+        liveUrl: 'https://weatherapp-delta-mocha.vercel.app/',
     },
-    
+
     {
         title: "Quizzy",
         techStacks: ['HTML5', 'CSS3', "JavaScript", "Trivia API"],
@@ -76,8 +90,8 @@ export const PORTFOLIO = [
             "Fetched questions from the Open Trivia Database API, covering a wide range of topics.",
             "Showcased skills in interactive UI design, API integration, and creating an engaging user experience.",
         ],
-        gitHubUrl : 'https://github.com/shubhamxdhapola/Quizzy',
-        liveUrl : 'https://shubhamxdhapola.github.io/Quizzy/',
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Quizzy',
+        liveUrl: 'https://shubhamxdhapola.github.io/Quizzy/',
     },
     {
         title: "Password Manager",
@@ -86,11 +100,11 @@ export const PORTFOLIO = [
             "Developed a Password Manager application using React and Tailwind CSS for a modern and responsive user interface.",
             "Enables users to securely store, view, and manage passwords, all saved locally in the browser's localStorage.",
             "Implemented features like copy to clipboard for easy retrieval of saved passwords.",
-            "Demonstrated expertise in React state management, Tailwind styling, and working with browser storage APIs.",        
+            "Demonstrated expertise in React state management, Tailwind styling, and working with browser storage APIs.",
         ],
-        imageUrl : './images/heroImage.jpg',
-        gitHubUrl : 'https://github.com/shubhamxdhapola/Password-Manager',
-        liveUrl : 'https://password-manager-kohl-alpha.vercel.app/',
+        imageUrl: './images/heroImage.jpg',
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Password-Manager',
+        liveUrl: 'https://password-manager-kohl-alpha.vercel.app/',
     },
     {
         title: "Listify",
@@ -102,8 +116,8 @@ export const PORTFOLIO = [
             "Featured a responsive, user-friendly interface with dynamic task list updates.",
             "Implemented localStorage to save tasks across page reloads, enhancing usability.",
         ],
-        gitHubUrl : 'https://github.com/shubhamxdhapola/Listify',
-        liveUrl : 'https://shubhamxdhapola.github.io/Listify/',
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Listify',
+        liveUrl: 'https://shubhamxdhapola.github.io/Listify/',
     },
     {
         title: "Calculator",
@@ -115,27 +129,27 @@ export const PORTFOLIO = [
             "Featured dark and light theme switching for user preference.",
             "Validated user input to prevent invalid expressions and ensure accurate calculations.",
         ],
-        gitHubUrl : 'https://github.com/shubhamxdhapola/Calculator',
-        liveUrl : 'https://shubhamxdhapola.github.io/Calculator/'
+        gitHubUrl: 'https://github.com/shubhamxdhapola/Calculator',
+        liveUrl: 'https://shubhamxdhapola.github.io/Calculator/'
     },
 ];
 
 export const SOCIAL_HANDLES = [
     {
-        socialHandleUrl : 'https://www.linkedin.com/in/shubhamdhapola/',
-        iconUrl : 'fa-brands fa-linkedin-in',
+        socialHandleUrl: 'https://www.linkedin.com/in/shubhamdhapola/',
+        iconUrl: 'fa-brands fa-linkedin-in',
     },
     {
-        socialHandleUrl : 'https://github.com/shubhamxdhapola',
-        iconUrl : 'fa-brands fa-github',
+        socialHandleUrl: 'https://github.com/shubhamxdhapola',
+        iconUrl: 'fa-brands fa-github',
     },
     {
-        socialHandleUrl : 'https://www.instagram.com/orewashubham/',
-        iconUrl : 'fa-brands fa-instagram',
+        socialHandleUrl: 'https://www.instagram.com/orewashubham/',
+        iconUrl: 'fa-brands fa-instagram',
     },
     {
-        socialHandleUrl : 'mailto:shubhamdhapola143@gmail.com',
-        iconUrl : 'fa-solid fa-envelope',
+        socialHandleUrl: 'mailto:shubhamdhapola143@gmail.com',
+        iconUrl: 'fa-solid fa-envelope',
     }
 ]
 
