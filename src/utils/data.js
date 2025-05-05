@@ -58,7 +58,6 @@ export const PORTFOLIO = [
         title: "Drippy",
         techStacks: ['Node.js', "React.js", "Redux", "MongoDB", "Tailwind", "Express.js"],
         description: [
-
             "Built a responsive eCommerce interface using React, Redux, Tailwind CSS, and DaisyUI.",
             "Developed a robust backend with Node.js, Express, and MongoDB, implementing JWT-based authentication.",
             "Integrated PayPal for online payment processing.",

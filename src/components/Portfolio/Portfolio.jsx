@@ -27,7 +27,7 @@ const Portfolio = () => {
   const slideRight = () => sliderRef.current.slickNext()
   const slideLeft = () => sliderRef.current.slickPrev()
 
-  setInterval(() => slideRight(), 5000);
+  // setInterval(() => slideRight(), 5000);
 
   return (
     <section className='portfolio-container' name="portfolio">
